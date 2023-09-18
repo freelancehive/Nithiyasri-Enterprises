@@ -14,9 +14,7 @@
     z-index: 99;
 }
 
-.myClass {
-    width: 500px;
-}
+
 
 
 /*** Spinner ***/
@@ -190,8 +188,8 @@
         height: 100%;
         object-fit: cover;
     }
-    .myClass h5{
-        font-size: 20px;
+    .myClass {
+     display:  none;
     }
 }
 
