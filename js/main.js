@@ -1,3 +1,33 @@
+function gotowhatsapp() {
+
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var sub = document.getElementById("subject").value;
+    var msg = document.getElementById("message").value;
+
+    var url = "https://wa.me/918939618999?text="
+        + "Name: " + name + "%0a"
+        + "Phone: " + phone + "%0a"
+        + "Email: " + email + "%0a"
+        + "Subject: " + sub + "%0a"
+        + "Message: " + msg;
+
+    window.open(url, '_blank').focus();
+}
+function sendEmail() {
+
+    var email = document.getElementById("emailInput").value;
+
+
+    if (email.trim() !== "") {
+ 
+        window.location.href = "mailto:Saravanan@nithiyasrienterprises.com?subject=Subject&body=Hello,%0D%0A%0D%0A" + email;
+    } else {
+        alert("Please enter your email address.");
+    }
+}
+
 (function ($) {
     "use strict";
 
